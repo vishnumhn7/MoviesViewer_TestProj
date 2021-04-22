@@ -32,7 +32,7 @@ class DetailsViewModel: DetailsViewModelling {
             let newSection = DetailsSection()
             newSection.synopsis = [synopsis]
             newSection.sectionType = .moviedetails
-            self.sections.value.append(newSection)
+            self.sections.value.insert(newSection, at: 0)
         }
     }
     
